@@ -1,0 +1,39 @@
+.promo {
+    min-height: 936px;
+    background-color: #000;
+    padding-top: 190px;
+    background-image: url("../img/main-bottles.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    &__subtitle {
+        margin: 0 0 12px;
+        text-align: center;
+        font-size: 24px;
+    }
+    &__title {
+        margin: 0 0 20px;
+        text-align: center;
+        font-size: 96px;
+        span {
+            color: $yellow-color;
+        }
+    }
+    &__descr {
+        max-width: 744px;
+        font-family: "Poppins";
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 30px;
+        margin: 0 auto 25px;
+        text-align: center;
+    }
+    &__more {
+        display: block;
+        max-width: 125px;
+        margin: 0 auto;
+        color: $yellow-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 1px solid $yellow-color;
+    }
+}
