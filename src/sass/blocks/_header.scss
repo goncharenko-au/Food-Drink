@@ -24,6 +24,7 @@
         }
         &-item {
             margin-right: 46px;
+            cursor: pointer;
             &:last-child {
                 margin-right: 0;
             }
@@ -75,6 +76,7 @@
         &-search,
         &-shop {
             margin-right: 30px;
+            cursor: pointer;
         }
     }
     &__nav {
@@ -83,9 +85,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            list-style-type: none;
+            font-family: "ChocolateBox";
             border-top: 1px solid rgba(255, 255, 255, 0.6);
             border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+            list-style-type: none;
             margin: 0;
         }
         &-link {

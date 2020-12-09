@@ -8,7 +8,7 @@
     <title>Food&Drinks</title>
     <meta name="title" content="Мое портфолио">
     <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -63,9 +63,40 @@
     </div>
 </section>
 
+<section class="new-wines">
+    <div class="container">
+        <div class="new-wines__inner">
+            <div class="new-wines__about">
+                <h2 class="new-wines__title">New Wines</h2>
+                <h3 class="new-wines__name">Merlot</h3>
+                <div class="new-wines__location">Winehouse Vineyard</div>
+                <p class="new-wines__descr">Merlot is loved for its boisterous black cherry flavors, supple
+                    tannins, and chocolatey finish. On the high end, it’s often
+                    mistaken with Cabernet Sauvignon.</p>
+                <div class="new-wines__buttons">
+                    <a href="" class="new-wines__learn-btn new-wines__btn active">Learn more</a>
+                    <a href="" class="new-wines__view-btn new-wines__btn">View more</a>
+                </div>
+            </div>
+
+
+
+            <div class="new-wines__slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="new-wines__item swiper-slide"> <img src="img/slider-bootle-01.png" alt="#"
+                            class="new-wines__img"></div>
+                    <div class="new-wines__item swiper-slide"> <img src="img/slider-bootle-01.png" alt="#"
+                            class="new-wines__img"></div>
+                </div>
+                <div class="swiper-button-prev">Prev</div>
+                <div class="swiper-button-next">Next</div>
+            </div>
+        </div>
+</section>
 
 <body>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
