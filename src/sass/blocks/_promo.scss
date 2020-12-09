@@ -6,12 +6,12 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     &__subtitle {
-        margin: 0 0 12px;
+        margin: 0 0 10px;
         text-align: center;
         font-size: 24px;
     }
     &__title {
-        margin: 0 0 20px;
+        margin: 0 0 10px;
         text-align: center;
         font-size: 96px;
         span {
@@ -34,6 +34,14 @@
         color: $yellow-color;
         text-transform: uppercase;
         text-decoration: none;
-        border-bottom: 1px solid $yellow-color;
+        // border-bottom: 1px solid $yellow-color;
+        background-image: linear-gradient($yellow-color, $yellow-color);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 1px;
+        transition: background-size 0.3s;
+        &:hover {
+            background-size: 100% 1px;
+        }
     }
 }
