@@ -2,6 +2,7 @@
 @import "base/mixins";
 @import "libs/normalize";
 @import "base/fonts";
+@import "blocks/title";
 
 *,
 *:before,
@@ -23,3 +24,4 @@ body {
 @import "blocks/header";
 @import "blocks/promo";
 @import "blocks/new-wines";
+@import "blocks/future-products";
