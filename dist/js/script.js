@@ -70,4 +70,17 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 
+    // Slider in offers
+    new Swiper(".offers__slider", {
+        // Navigation arrows
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        slidesPerView: 3,
+        spaceBetween: 25,
+        // autoHeight: true
+    });
+
 });
+
