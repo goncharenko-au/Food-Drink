@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // Slider in new-wines
-    let mySwiper = new Swiper(".new-wines__slider", {
+    new Swiper(".new-wines__slider", {
         // Navigation arrows
         navigation: {
             nextEl: ".swiper-button-next",
@@ -59,9 +59,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
         }
-
     });
 
-
+    // Slider in reviews
+    new Swiper(".reviews__slider", {
+        // Navigation arrows
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+    });
 
 });

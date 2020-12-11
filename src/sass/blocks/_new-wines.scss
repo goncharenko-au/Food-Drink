@@ -82,8 +82,8 @@
     color: #1f1f1f;
     background-color: $yellow-color;
 }
-.swiper-button-prev,
-.swiper-button-next {
+.new-wines__slider-prev.swiper-button-prev,
+.new-wines__slider-next.swiper-button-next {
     font-family: "Poppins";
     font-size: 20px;
     line-height: 30px;
@@ -96,14 +96,14 @@
         content: "";
     }
 }
-.swiper-button-prev {
+.new-wines__slider-prev.swiper-button-prev {
     left: 0;
 }
-.swiper-button-next {
+.new-wines__slider-next.swiper-button-next {
     right: 0;
 }
-.swiper-button-next.swiper-button-disabled,
-.swiper-button-prev.swiper-button-disabled {
+.new-wines__slider-next.swiper-button-next.swiper-button-disabled,
+.new-wines__slider-prev.swiper-button-prev.swiper-button-disabled {
     opacity: 1;
     color: rgba(255, 255, 255, 0.3);
 }
