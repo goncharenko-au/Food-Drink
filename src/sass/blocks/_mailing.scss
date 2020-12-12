@@ -1,0 +1,38 @@
+.mailing {
+    padding: 57px 0 63px;
+    background-color: $grey-color;
+    &__title {
+        font-family: "ChocolateBox";
+        font-size: 48px;
+        color: $yellow-color;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    &__text {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__form {
+        margin: 0 auto;
+        width: 465px;
+        display: flex;
+    }
+    &__input {
+        width: 100%;
+        padding: 18px 34px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        // position: relative;
+        &::placeholder {
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+    &__btn {
+        background-color: $yellow-color;
+        padding: 19px;
+        height: 54px;
+        border: none;
+    }
+}
