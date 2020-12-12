@@ -1,0 +1,51 @@
+.footer {
+    background-color: #000;
+    padding: 133px 0 44px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 92px;
+    }
+    &__title {
+        font-size: 24px;
+        color: $yellow-color;
+        font-family: "ChocolateBox";
+        text-transform: lowercase;
+        margin-bottom: 40px;
+    }
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 170px;
+        &-item {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+    }
+    &__socials {
+        max-width: 218px;
+    }
+    &__link {
+        font-size: 20px;
+    }
+    &__item {
+        font-size: 16px;
+        padding-left: 35px;
+        margin-bottom: 10px;
+    }
+    &__divider {
+        height: 1px;
+        width: 100%;
+        background-color: rgba(256, 256, 256, 0.6);
+    }
+    &__copyright {
+        padding-top: 22px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
