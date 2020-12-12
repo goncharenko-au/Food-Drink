@@ -93,5 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // centeredSlides: true,
         spaceBetween: 128
     });
+
+    // form's validate 
 });
 
