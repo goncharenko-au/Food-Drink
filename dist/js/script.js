@@ -82,5 +82,16 @@ document.addEventListener("DOMContentLoaded", () => {
         // autoHeight: true
     });
 
+
+    // Slider in events
+    new Swiper(".events__slider", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        // slidesPerView: 1,
+        // centeredSlides: true,
+        spaceBetween: 128
+    });
 });
 
