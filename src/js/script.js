@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    // burger 
+    const burgerBtn = document.querySelector('.header__top-burger');
+    burgerBtn.addEventListener('click', () => {
+        burgerBtn.classList.toggle('active_burger');
+    });
+
     // Slider in new-wines
     new Swiper(".new-wines__slider", {
         // Navigation arrows
