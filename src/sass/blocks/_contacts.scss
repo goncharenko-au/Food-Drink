@@ -66,21 +66,42 @@
         margin: 0;
         list-style-type: none;
         max-width: 360px;
+        min-height: 48px;
+        &-item {
+            width: 48px;
+        }
         &-link {
             color: $yellow-color;
             font-size: 40px;
             text-decoration: none;
+            position: relative;
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-family: "icomoon";
+            }
+        }
+        &_google:before {
+            content: "\ea88";
+        }
+        &_twitter:before {
+            content: "\ea96";
+        }
+        &_linkedin:before {
+            content: "\eaca";
+        }
+        &_instagram:before {
+            content: "\ea92";
         }
     }
     &__form {
         width: 670px;
-        // flex: 0 0 670px;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
+        max-width: 100%;
     }
     &__block {
         position: relative;
+        margin-bottom: 20px;
     }
     &__input,
     &__textarea {
@@ -89,7 +110,8 @@
         border: 1px solid #fff;
         padding: 10px;
         color: #fff;
-        margin-bottom: 30px;
+        font-family: inherit;
+        z-index: 1;
     }
     &__textarea {
         resize: none;
@@ -101,6 +123,16 @@
         left: 20px;
         background-color: #000;
         padding: 0 5px;
+        z-index: 2;
+    }
+    &__error {
+        // position: absolute;
+        font-family: "Poppins";
+        background-color: $yellow-color;
+        color: #000;
+        padding: 5px 5px 5px 10px;
+        margin-bottom: 20px;
+        visibility: hidden;
     }
     &__btn {
         width: 30%;

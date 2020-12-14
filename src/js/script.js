@@ -1,10 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // burger 
-    const burgerBtn = document.querySelector('.header__top-burger');
+    const burgerBtn = document.querySelector('.header__top-burger'),
+        headerNav = document.querySelector('.header__nav');
+
+
     burgerBtn.addEventListener('click', () => {
-        burgerBtn.classList.toggle('active_burger');
+        if (burgerBtn.classList.contains('active_burger')) {
+            burgerBtn.classList.remove('active_burger');
+            headerNav.style.display = 'none';
+            headerNav.classList.remove('animate__animated', 'animate__zoomIn');
+        } else {
+            burgerBtn.classList.add('active_burger');
+            headerNav.style.display = 'block';
+            headerNav.classList.add('animate__animated', 'animate__zoomIn');
+        }
     });
+
 
     // Slider in new-wines
     new Swiper(".new-wines__slider", {
@@ -101,5 +113,67 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // form's validate 
+
+    const form = document.querySelector('.contacts__form'),
+        username = document.querySelector('.contacts__name'),
+        email = document.querySelector('.contacts__email'),
+        phone = document.querySelector('.contacts__phone'),
+        message = document.querySelector('.contacts__message');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        checkInputs();
+    });
+
+    function checkInputs() {
+        const usernameValue = username.value.trim(),
+            emailValue = email.value.trim(),
+            phoneValue = phone.value.trim(),
+            messageValue = message.value;
+
+        if (usernameValue === '') {
+            setErrorFor(username, 'Сannot be blank');
+            // error.style.visibility = 'visible';
+            // username.style.borderColor = '#e2b024';
+        } else {
+            setSuccessFor(username);
+            // error.style.visibility = 'hidden';
+            // username.style.borderColor = '#fff';
+        }
+
+        if (emailValue === '' && !emailValue.includes('@')) {
+            setErrorFor(email, 'Сannot be blank');
+        } else {
+            setSuccessFor(email);
+        }
+
+        if (phoneValue === '') {
+            setErrorFor(phone, 'Сannot be blank');
+        } else {
+            setSuccessFor(phone);
+        }
+
+        if (messageValue === '') {
+            setErrorFor(message, 'Сannot be blank');
+        } else {
+            setSuccessFor(message);
+        }
+    }
+
+    form.classList.add('modal');
+
+    function setErrorFor(input, message) {
+        const error = document.querySelector('.contacts__error');
+        error.style.visibility = 'visible';
+        input.style.borderColor = '#e2b024';
+        error.innerText = message;
+    }
+
+    function setSuccessFor(input) {
+        const error = document.querySelector('.contacts__error');
+        error.style.visibility = 'hidden';
+        input.style.borderColor = '#fff';
+    }
+
 });
 

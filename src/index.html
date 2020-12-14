@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Food&Drinks</title>
-    <meta name="title" content="Мое портфолио">
+    <meta name="title" content="Wine & Food">
     <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/274d45d6c4/UntitledProject/style.css">
+    <!-- <link rel="stylesheet" href="https://i.icomoon.io/public/temp/274d45d6c4/UntitledProject/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -240,8 +241,6 @@
     </div>
 </section>
 
-
-
 <section class="reviews">
     <div class="container">
         <h2 class="reviews__title title">Client <span>Review</span></h2>
@@ -409,23 +408,20 @@
 
                 <ul class="contacts__socials">
                     <li class="contacts__socials-item">
-                        <a class="contacts__socials-link" href="https://www.google.com/">
-                            <span class="icon-google"></span>
+                        <a class="contacts__socials-link contacts__socials_google" href="https://www.google.com/">
                         </a>
                     </li>
                     <li class="contacts__socials-item">
-                        <a class="contacts__socials-link" href="https://twitter.com/">
-                            <span class="icon-twitter"></span>
+                        <a class="contacts__socials-link contacts__socials_twitter" href="https://twitter.com/">
                         </a>
                     </li>
                     <li class="contacts__socials-item">
-                        <a class="contacts__socials-link" href="https://www.linkedin.com/">
-                            <span class="icon-linkedin2"></span>
+                        <a class="contacts__socials-link contacts__socials_linkedin" href="https://www.linkedin.com/">
                         </a>
                     </li>
                     <li class="contacts__socials-item">
-                        <a class="contacts__socials-link" href="https://www.instagram.com/"><span
-                                class="icon-instagram"></span></a>
+                        <a class="contacts__socials-link contacts__socials_instagram"
+                            href="https://www.instagram.com/"></a>
                     </li>
                 </ul>
             </div>
@@ -434,19 +430,23 @@
                 <div class="contacts__block">
                     <label for="name" class="contacts__label">Name</label>
                     <input type="text" name="name" class="contacts__name contacts__input">
+                    <!-- <div class="contacts__error">Заполните поле</div> -->
                 </div>
                 <div class="contacts__block">
                     <label for="" class="contacts__label">Email</label>
                     <input type="email" name="email" class="contacts__email contacts__input">
+                    <!-- <div class="contacts__error">Заполните поле</div> -->
                 </div>
                 <div class="contacts__block">
                     <label for="phone" class="contacts__label">Phone</label>
                     <input type="tel" name="phone" class="contacts__phone contacts__input">
+                    <!-- <div class="contacts__error">Заполните поле</div> -->
                 </div>
                 <div class="contacts__block">
                     <label for="message" class="contacts__label">Messege</label>
                     <textarea type="text" name="message" class="contacts__message contacts__textarea"></textarea>
                 </div>
+                <div class="contacts__error">Заполните поле</div>
                 <button class="contacts__btn">Send</button>
             </form>
         </div>
@@ -504,25 +504,21 @@
             <div class="footer__contacts">
                 <div class="footer__title">connect with us</div>
                 <div class="footer__list">
-                    <ul class="footer__socials contacts__socials">
-                        <li class="contacts__socials-item">
-                            <a class="footer__link contacts__socials-link" href="https://www.google.com/">
-                                <span class="icon-google"></span>
+                    <ul class="footer__socials">
+                        <li class="footer__socials-item">
+                            <a class="footer__link footer__link_google" href="https://www.google.com/">
                             </a>
                         </li>
-                        <li class="contacts__socials-item">
-                            <a class="footer__link contacts__socials-link" href="https://twitter.com/">
-                                <span class="icon-twitter"></span>
+                        <li class="footer__socials-item">
+                            <a class="footer__link footer__link_twitter" href="https://twitter.com/">
                             </a>
                         </li>
-                        <li class="contacts__socials-item">
-                            <a class="footer__link contacts__socials-link" href="https://www.linkedin.com/">
-                                <span class="icon-linkedin2"></span>
+                        <li class="footer__socials-item">
+                            <a class="footer__link footer__link_linkedin" href="https://www.linkedin.com/">
                             </a>
                         </li>
-                        <li class="contacts__socials-item">
-                            <a class="footer__link contacts__socials-link" href="https://www.instagram.com/"><span
-                                    class="icon-instagram"></span></a>
+                        <li class="footer__socials-item">
+                            <a class="footer__link footer__link_instagram" href="https://www.instagram.com/">
                         </li>
                     </ul>
                     <ul class="contacts__items">

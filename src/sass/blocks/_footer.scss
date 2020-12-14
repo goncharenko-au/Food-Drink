@@ -28,10 +28,38 @@
     }
     &__socials {
         max-width: 218px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
     }
     &__link {
-        font-size: 20px;
+        position: relative;
+        color: $yellow-color;
+        font-size: 24px;
+        text-decoration: none;
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: "icomoon";
+        }
+        &_google:before {
+            content: "\ea88";
+        }
+        &_twitter:before {
+            content: "\ea96";
+        }
+        &_linkedin:before {
+            content: "\eaca";
+        }
+        &_instagram:before {
+            content: "\ea92";
+        }
     }
+
     &__item {
         font-size: 16px;
         padding-left: 35px;

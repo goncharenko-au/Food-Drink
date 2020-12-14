@@ -15,7 +15,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 13px;
+        padding-bottom: 13px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
         &-list {
             display: flex;
             justify-content: space-between;
@@ -41,50 +42,47 @@
             height: 23px;
         }
         &-burger {
-            width: 18px;
-            height: 16px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
             position: relative;
             cursor: pointer;
-            &:before {
+            animation: pulsing 2s infinite;
+            &:before,
+            &:after,
+            span {
                 content: "";
                 position: absolute;
-                width: 100%;
+                width: 18px;
                 height: 2px;
                 background-color: #fff;
-                top: 0;
-                left: 0;
-                transition: all 0.5s ease;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &:before {
+                top: 5px;
+                transition: all 1s ease;
             }
             &:after {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                background-color: #fff;
-                bottom: 2px;
-                left: 0;
+                bottom: 5px;
                 transition: all 0.5s ease;
             }
             span {
-                display: block;
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                background-color: #fff;
-                left: 0;
-                top: 6px;
+                top: 11px;
             }
             &.active_burger {
                 &:before {
-                    transform: rotate(45deg);
-                    top: 5px;
+                    left: 50%;
+                    top: 11px;
+                    transform: translateX(-50%) rotate(45deg);
                 }
                 &:after {
-                    transform: rotate(-45deg);
-                    bottom: 9px;
+                    left: 50%;
+                    bottom: 11px;
+                    transform: translateX(-50%) rotate(-45deg);
                 }
                 span {
-                    display: none;
+                    transform: scale(0);
                 }
             }
         }
@@ -95,13 +93,13 @@
         }
     }
     &__nav {
+        display: none;
         &-list {
             padding: 20px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-family: "ChocolateBox";
-            border-top: 1px solid rgba(255, 255, 255, 0.6);
             border-bottom: 1px solid rgba(255, 255, 255, 0.6);
             list-style-type: none;
             margin: 0;
@@ -114,5 +112,19 @@
                 color: $yellow-color;
             }
         }
+    }
+}
+@keyframes pulsing {
+    0% {
+        box-shadow: 0 0 30px $yellow-color;
+    }
+    25% {
+        box-shadow: 0 0 10px #fff;
+    }
+    75% {
+        box-shadow: 0 0 30px $yellow-color;
+    }
+    100% {
+        box-shadow: 0 0 30px $yellow-color;
     }
 }
